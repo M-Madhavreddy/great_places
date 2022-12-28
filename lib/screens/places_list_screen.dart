@@ -10,9 +10,11 @@ class PlacesListScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('MY PLACES'),
         actions: [
-          IconButton(onPressed: (){
-            Navigator.of(context).pushNamed(AddPlaceScreen.routeName);
-          }, icon: const Icon(Icons.add))
+          IconButton(
+              onPressed: () {
+                Navigator.of(context).pushNamed(AddPlaceScreen.routeName);
+              },
+              icon: const Icon(Icons.add))
         ],
       ),
       body: const Center(
